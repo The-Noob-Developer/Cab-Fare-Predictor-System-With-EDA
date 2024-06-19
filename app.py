@@ -1,5 +1,5 @@
 import datetime
-import haversine as hs
+import haversine
 from haversine import Unit
 from sklearn.linear_model import LinearRegression
 import pickle
@@ -41,7 +41,7 @@ submit_button = st.button("Enter Number of Passengers")
 if (st.button('\nPredict Fare')):
     pickup_coords = (pickup_latitude, pickup_longitude)
     dropoff_coords = (dropoff_latitude, dropoff_longitude)
-    haversine_distance = hs.haversine(
+    haversine_distance = haversine.haversine(
         pickup_coords, dropoff_coords, unit=Unit.KILOMETERS)
 
     now = datetime.datetime.now()
