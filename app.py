@@ -64,24 +64,24 @@ if (st.button('\nPredict Fare')):
     fare = loaded_model.predict([data])
     st.text(f"Fare Estimate: {fare[0][0].round(2)} $")
 
-image_paths = [r'PLOTS\Pickup Plot of Pickup Latitude vs Pickup Longitude.png',
-               r'PLOTS\Dropoff Plot of Dropoff Latitude vs Dropoff Longitude.png',
-               r'PLOTS\Distribution of Pickup(Green) & Dropoff(Blue) Coordinates on New York Map.png',
-               r'PLOTS\Fare Amount Distribution.png',
-               r'PLOTS\Haversine Distance Count Distribution.png',
-               r'PLOTS\Passenger Count Frequency.png',
-               r'PLOTS\Fare Variation with Passengers in the Cab.png',
-               r'PLOTS\Correlation Heatmap.png',
-               r'PLOTS\Fare Variation over the Years.png',
-               r'PLOTS\Fare Variation over the Months of the Year.png',
-               r'PLOTS\Fare Variation over the Days of the Month.png',
-               r'PLOTS\Number of Rides over the Hours of the Day.png',
-               r'PLOTS\Fare Variation over Hours of the Day.png',
-               r'PLOTS\Mean Fare Amount Variation over different Timeframes.png',
-               r'PLOTS\Haversine Distance variation over different TimeFrames.png',
-               r'PLOTS\Fare per Km Variation over different Timeframes.png',
-               r'PLOTS\Fare Variation with Haversine Distance.png',
-               r'PLOTS\Average Fare Price variation with Number of Passengers.png']
+image_paths = [r'PLOTS/Pickup Plot of Pickup Latitude vs Pickup Longitude.png',
+               r'PLOTS/Dropoff Plot of Dropoff Latitude vs Dropoff Longitude.png',
+               r'PLOTS/Distribution of Pickup(Green) & Dropoff(Blue) Coordinates on New York Map.png',
+               r'PLOTS/Fare Amount Distribution.png',
+               r'PLOTS/Haversine Distance Count Distribution.png',
+               r'PLOTS/Passenger Count Frequency.png',
+               r'PLOTS/Fare Variation with Passengers in the Cab.png',
+               r'PLOTS/Correlation Heatmap.png',
+               r'PLOTS/Fare Variation over the Years.png',
+               r'PLOTS/Fare Variation over the Months of the Year.png',
+               r'PLOTS/Fare Variation over the Days of the Month.png',
+               r'PLOTS/Number of Rides over the Hours of the Day.png',
+               r'PLOTS/Fare Variation over Hours of the Day.png',
+               r'PLOTS/Mean Fare Amount Variation over different Timeframes.png',
+               r'PLOTS/Haversine Distance variation over different TimeFrames.png',
+               r'PLOTS/Fare per Km Variation over different Timeframes.png',
+               r'PLOTS/Fare Variation with Haversine Distance.png',
+               r'PLOTS/Average Fare Price variation with Number of Passengers.png']
 
 image_texts = [
     "Pickup Plot of Pickup Latitude vs Pickup Longitude",
